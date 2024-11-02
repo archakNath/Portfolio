@@ -71,7 +71,7 @@ gsap.from("#about h2, #about .content", {
     duration: 1,
     scrollTrigger: {
         trigger: "#about",
-        start: "top 30%"
+        start: "top 50%"
     }
 })
 
@@ -83,7 +83,7 @@ gsap.from("#jobs h2, #jobs .content", {
     duration: 1,
     scrollTrigger: {
         trigger: "#jobs",
-        start: "top 30%"
+        start: "top 50%"
     }
 })
 

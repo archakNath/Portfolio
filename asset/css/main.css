@@ -368,6 +368,7 @@ ul li::before {
     position: relative;
     color: var(--green);
     cursor: pointer;
+    background-color: var(--black);
 }
 
 #jobs .content .left li.active::before {
