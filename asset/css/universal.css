@@ -1,6 +1,6 @@
 /* ================COLORS==================== */
 
-:root{
+:root {
     --green: #29BC89;
     --black: #1D1F20;
     --light-slate: #a8b2d1;
@@ -10,21 +10,21 @@
 
 
 /* ====================EXPLICIT TEXT COLORS======================= */
-.green-text{
+.green-text {
     color: var(--green);
 }
 
-.grey-text{
+.grey-text {
     color: var(--light-slate);
 }
 
-.white-text{
+.white-text {
     color: var(--white);
 }
 
 
 /* =====================UNIVERSAL CSS========================== */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,56 +33,58 @@
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-h1{
+h1 {
     font-size: 4.6vw;
     line-height: 4vw;
 }
 
-h2{
+h2 {
     font-size: 2vw;
     color: var(--white);
 }
 
-h3{
+h3 {
     font-size: 1.5vw;
     color: var(--white);
 }
 
-p, button{
+p,
+button {
     font-size: 1.2vw;
 }
 
-a{
+a {
     width: fit-content;
 }
 
-@media(max-width: 760px){
-    h1{
+@media(max-width: 760px) {
+    h1 {
         font-size: 8vw;
         line-height: 7vw;
     }
 
-    h2{
+    h2 {
         font-size: 6vw;
     }
 
-    h3{
+    h3 {
         font-size: 5vw;
     }
 
-    p, button{
+    p,
+    button {
         font-size: 4vw;
     }
 
-    
+
 }
 
 /* ====================STRUCTURAL CSS======================= */
-.container{
+.container {
     width: 100%;
     height: 100%;
     max-width: 1250px;
@@ -90,8 +92,14 @@ a{
     padding-inline: 50px;
 }
 
-@media(max-width: 760px){
-    .container{
+@media(max-width: 760px) {
+    .container {
         padding-inline: 20px;
     }
 }
+
+.background-grid {
+    background-image: linear-gradient(#29bc8810 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #29bc8810 calc(100% - 0.5px)), linear-gradient(90deg, #29bc8810 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #29bc8810 calc(100% - 0.5px));
+    background-size: 8.333333333333334% 16.666666666666668%;
+    border: 1px solid #29bc8810;
+  }

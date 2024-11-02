@@ -91,7 +91,6 @@ header {
     padding-inline: 4vw;
     display: flex;
     justify-content: space-between;
-    background-color: var(--black);
     transition: all .2s;
     z-index: 998;
 }
@@ -386,7 +385,6 @@ ul li::before {
     position: relative;
     color: var(--green);
     cursor: pointer;
-    background-color: var(--black);
 }
 
 #jobs .content .left li.active::before {
@@ -473,6 +471,7 @@ ul li::before {
 
     #jobs .content .left li {
         padding: 2vw 4vw;
+        background-color: var(--black);
     }
 
     #jobs .content .left li::before {

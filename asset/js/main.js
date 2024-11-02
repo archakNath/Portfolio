@@ -43,8 +43,10 @@ window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 50) {
         header.style.boxShadow = "0 0 10px rgba(128, 128, 128, 0.255)";
+        header.style.backgroundColor = "var(--black)";
     } else {
         header.style.boxShadow = "none";
+        header.style.backgroundColor = "transparent"
     }
 });
 
