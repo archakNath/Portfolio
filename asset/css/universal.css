@@ -1,0 +1,13 @@
+:root{
+    --green: #29BC89;
+    --black: #1D1F20;
+    --light-slate: #a8b2d1;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
