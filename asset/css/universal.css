@@ -78,9 +78,7 @@ a{
         font-size: 4vw;
     }
 
-    .container{
-        padding-inline: 15px;
-    }
+    
 }
 
 /* ====================STRUCTURAL CSS======================= */
@@ -90,4 +88,10 @@ a{
     max-width: 1250px;
     margin-inline: auto;
     padding-inline: 50px;
+}
+
+@media(max-width: 760px){
+    .container{
+        padding-inline: 20px;
+    }
 }
