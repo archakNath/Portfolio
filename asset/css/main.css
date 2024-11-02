@@ -1,0 +1,478 @@
+/* =====================SPLASH SCREEN====================== */
+.splash {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    z-index: 999;
+}
+
+.splash img {
+    width: 90px;
+}
+
+/* ==================LEFT: SOCIALS======================== */
+.left-social {
+    position: fixed;
+    bottom: 0;
+    left: 4vw;
+}
+
+.left-social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.left-social ul::after {
+    content: "";
+    background-color: var(--light-slate);
+    width: 1px;
+    height: 150px;
+    margin: auto;
+}
+
+.left-social svg {
+    fill: var(--light-slate);
+    width: 25px;
+    transition: all .2s;
+}
+
+.left-social svg:hover {
+    fill: var(--green);
+    transform: translateY(-5px);
+}
+
+/* =====================right-social: SOCIAL=========================== */
+.right-social {
+    position: fixed;
+    bottom: 0;
+    right: 4vw;
+}
+
+.right-social a {
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    font-size: .9vw;
+    transition: all .2s;
+}
+
+.right-social a:hover {
+    color: var(--green);
+    transform: translateY(-5px);
+}
+
+.right-social::after {
+    display: block;
+    content: "";
+    background-color: var(--light-slate);
+    width: 1px;
+    height: 150px;
+    margin-inline: auto;
+    margin-top: 1vw;
+}
+
+@media(max-width: 760px){
+    .right-social, .left-social{
+        display: none;
+    }
+}
+
+/* ====================HEADER====================== */
+header {
+    width: 100%;
+    position: fixed;
+    padding-block: 20px;
+    padding-inline: 4vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    transition: all .2s;
+    z-index: 998;
+}
+
+header div{
+    display: flex;
+}
+
+header .logo, header svg {
+    width: 35px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    font-size: .9vw;
+}
+
+header ul li {
+    color: var(--white);
+    transition: all .2s;
+}
+
+header ul li:hover {
+    color: var(--green);
+}
+
+header ul li span {
+    color: var(--green);
+    margin-right: 5px;
+}
+
+header button {
+    width: fit-content;
+    background-color: transparent;
+    padding: .6vw 1vw;
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: .3vw;
+    cursor: pointer;
+    transition: all .2s;
+    font-size: .9vw;
+}
+
+header button:hover {
+    background-color: #29bc883d;
+}
+
+header svg{
+    display: none;
+}
+
+@media(max-width: 760px){
+    header ul{
+        display: none;
+    }
+
+    header svg{
+        display: block;
+    }
+}
+
+/* =======================MAIN=========================== */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+main .container button {
+    width: fit-content;
+    background-color: transparent;
+    padding: 1.3vw 2.6vw;
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: .3vw;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+main .container button:hover {
+    background-color: #29bc883d;
+}
+
+@media(max-width: 760px){
+    main .container{
+        gap: 4vw;
+    }
+
+    main .container button{
+        padding: 2.6vw 5vw;
+        border-radius: 1vw;
+    }
+}
+
+/* ==================ABOUT======================= */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+
+section h2 {
+    display: flex;
+    align-items: center;
+}
+
+section h2 span {
+    font-size: 1.5vw;
+    margin-right: 10px;
+    color: var(--green);
+    font-weight: normal;
+}
+
+section h2::after {
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: var(--light-slate);
+    display: block;
+    margin-left: 20px;
+}
+
+#about .content {
+    width: 100%;
+    display: flex;
+}
+
+#about .left,
+#about .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    z-index: 999;
+}
+
+#about p {
+    color: var(--green);
+}
+
+#about ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#about ul li {
+    display: flex;
+    align-items: center;
+    color: var(--green);
+}
+
+ul li span {
+    color: var(--white);
+}
+
+ul li::before {
+    content: attr(data-icon);
+    /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+    font-size: .7em;
+    margin-right: 5px;
+}
+
+#about .right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#about .pseudo-line {
+    width: 50%;
+    aspect-ratio: 1;
+    border: 1px solid var(--green);
+    border-radius: .5vw;
+    position: absolute;
+    left: 30%;
+    top: 7%;
+}
+
+#about img {
+    width: 50%;
+    filter: grayscale(100%);
+    border-radius: .5vw;
+    transition: all .2s;
+    z-index: 10;
+}
+
+#about img:hover {
+    filter: none;
+}
+
+@media(max-width: 760px){
+    #about{
+        height: fit-content;
+    }
+
+    section h2 span{
+        font-size: 3vw;
+    }
+
+    #about .content{
+        flex-direction: column-reverse;
+        gap: 10vw;
+    }
+
+    #about .left{
+        gap: 3vw;
+    }
+
+    #about ul{
+        gap: 2vw;
+    }
+
+    #about .right, #about .left{
+        width: 100%;
+    }
+}
+
+/* ==================JOBS======================= */
+#jobs {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+}
+
+#jobs .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#jobs .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#jobs .content .left {
+    width: 35%;
+}
+
+#jobs .content .left ul {
+    list-style: none;
+}
+
+#jobs .content .left li {
+    width: 100%;
+    padding: .7vw 1.3vw;
+    transition: all .2s;
+    position: relative;
+    color: var(--green);
+    cursor: pointer;
+}
+
+#jobs .content .left li.active::before {
+    background-color: var(--green);
+}
+
+#jobs .content .left li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background-color: var(--blue);
+}
+
+#jobs .content .left li:hover,
+#jobs .content .left li.active {
+    background-color: var(--blue);
+}
+
+#jobs .content .right {
+    width: 60%;
+}
+
+#jobs .content .right p {
+    margin-top: .5vw;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+
+}
+
+#jobs h3 span,
+#jobs h3 a {
+    color: var(--green);
+}
+
+#jobs h3 a{
+    text-decoration-color: transparent;
+    transition: outline-color 0.3s ease;
+}
+
+#jobs h3 a:hover {
+    text-decoration-color: var(--green);
+}
+
+#jobs .right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#jobs ul li {
+    color: var(--green);
+    /* font-size: 1.2vw; */
+}
+
+#jobs ul li a{
+    color: var(--green);
+    text-decoration-color: transparent;
+    transition: outline-color 0.3s ease;
+}
+
+#jobs ul li a:hover {
+    text-decoration-color: var(--green);
+}
+
+@media(max-width: 760px){
+    #jobs .content{
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    #jobs .content .left{
+        width: 100%;
+    }
+
+    #jobs .content .left ul{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #jobs .content .left li{
+        padding: 2vw 4vw;
+    }
+
+    #jobs .content .left li::before{
+        top: auto;
+        right: 0;
+        width: auto;
+        height: 1px;
+    }
+
+    #jobs .content .right{
+        width: 100%;
+    }
+
+    #jobs .content .right p{
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    #jobs .right ul{
+        gap: 2vw;
+    }
+}

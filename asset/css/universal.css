@@ -1,13 +1,89 @@
+/* ================COLORS==================== */
+
 :root{
     --green: #29BC89;
     --black: #1D1F20;
     --light-slate: #a8b2d1;
     --white: #fff;
+    --blue: #182840;
 }
 
+
+/* ====================EXPLICIT TEXT COLORS======================= */
+.green-text{
+    color: var(--green);
+}
+
+.grey-text{
+    color: var(--light-slate);
+}
+
+.white-text{
+    color: var(--white);
+}
+
+
+/* =====================UNIVERSAL CSS========================== */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Satoshi', sans-serif;
+    color: var(--light-slate);
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    font-size: 4.6vw;
+    line-height: 4vw;
+}
+
+h2{
+    font-size: 2vw;
+    color: var(--white);
+}
+
+h3{
+    font-size: 1.5vw;
+    color: var(--white);
+}
+
+p, button{
+    font-size: 1.2vw;
+}
+
+a{
+    width: fit-content;
+}
+
+@media(max-width: 760px){
+    h1{
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
+
+    h3{
+        font-size: 4vw;
+    }
+
+    p, button{
+        font-size: 4vw;
+    }
+}
+
+/* ====================STRUCTURAL CSS======================= */
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1250px;
+    margin-inline: auto;
+    padding-inline: 50px;
 }
