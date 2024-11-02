@@ -106,8 +106,8 @@ a {
 
 @media(max-width: 760px){
     .background-grid {
-        background-image: linear-gradient(#29bc8810 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #29bc8810 calc(100% - 1.5px)), linear-gradient(90deg, #29bc8810 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #29bc8810 calc(100% - 1.5px));
+        background-image: linear-gradient(#29bc8806 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #29bc8806 calc(100% - 1.5px)), linear-gradient(90deg, #29bc8806 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #29bc8806 calc(100% - 1.5px));
         background-size: 20% 16.666666666666668%;
-        border: 1.5px solid #29bc8810;
+        border: 1.5px solid #29bc8806;
     }
 }
