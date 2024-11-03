@@ -228,7 +228,7 @@ section h2 span {
     font-weight: normal;
 }
 
-section h2::after {
+section .container > h2::after {
     content: "";
     width: 300px;
     height: 1px;
@@ -263,8 +263,6 @@ section h2::after {
 }
 
 #about ul li {
-    display: flex;
-    align-items: center;
     color: var(--green);
 }
 
@@ -360,7 +358,8 @@ ul li::before {
 #jobs .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 20vh;
     gap: 2vw;
 }
 
@@ -493,4 +492,154 @@ ul li::before {
     #jobs .right ul {
         gap: 2vw;
     }
+}
+
+/* ===================PROJECTS===================== */
+#projects{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+}
+
+#projects .container{
+    padding-block: 20vh;
+    height: 100%;
+}
+
+#projects .project-list{
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    margin-top: 3vw;
+}
+
+#projects .project-list .indi-project{
+    display: flex;
+}
+
+#projects .project-list .indi-project p{
+    font-size: 1vw;
+}
+
+#projects .project-list .indi-project .image{
+    width: 70%;
+    z-index: 0;
+}
+
+#projects .project-list .indi-project .image img{
+    width: 100%;
+    border-radius: .3vw;
+    filter: grayscale(100%);
+    transition: all .2s;
+}
+
+#projects .project-list .indi-project .image img:hover{
+    filter: grayscale(0);
+}
+
+#projects .project-list .indi-project .information {
+    z-index: 10;
+    width: 50%;
+}
+
+#projects .project-list .indi-project .information .details{
+    background-color: var(--blue);
+    padding: 1.5vw 1.3vw;
+    text-align: justify;
+    border-radius: .3vw;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.089);
+    transition: all .2s;
+    margin-block: 2vw;
+}
+
+#projects .project-list .indi-project .information .details:hover {
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.114);
+}
+
+#projects .project-list .indi-project .information .links{
+    display: flex;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+
+#projects .project-list .indi-project .information .links svg {
+    fill: var(--light-slate);
+    width: 25px;
+    transition: all .2s;
+}
+
+#projects .project-list .indi-project .information .links svg:hover {
+    fill: var(--green);
+    transform: translateY(-5px);
+}
+
+#projects .project-list .indi-project .right-align{
+    text-align: right;
+    margin-left: -10%;
+}
+
+#projects .project-list .indi-project .right-align h2{
+    text-align: right;
+    display: block;
+}
+
+#projects .project-list .indi-project .right-align .links{
+    justify-content: end;
+}
+
+#projects .project-list .indi-project .left-align{
+    text-align: left;
+    margin-right: -10%;
+}
+
+/* =====================CONTACT====================== */
+
+#contact{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+}
+
+#contact .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vw;
+}
+
+#contact .container > h2::after{
+    display: none;
+}
+
+#contact .container button {
+    width: fit-content;
+    background-color: transparent;
+    padding: 1.3vw 2.6vw;
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: .3vw;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#contact .container button:hover {
+    background-color: #29bc883d;
+}
+
+@media(max-width: 760px) {
+
+    #contact .container button {
+        padding: 2.6vw 5vw;
+        border-radius: 1vw;
+    }
+}
+
+/* ===============FOOTER================== */
+
+footer{
+    text-align: center;
+    background-color: var(--black);
+    padding-block: 1vw;
 }

@@ -95,8 +95,7 @@ const jobs = [
         "link": "https://bppimt.ac.in/",
         "designation": "Software Developer",
         "duration": "October 2022 - Present",
-        "Description": `<li data-icon="🟢">Consists of all the micro-projects assigned under <a href="https://makautexam.net/">MAKAUT</a> curriculum.</li>
-                        <li data-icon="🟢">Developed a Text-to-Speech(TTS) Software using Python Libraries in PCC-CS393(IT Workshop).</li>
+        "Description": `<li data-icon="🟢">Developed a Text-to-Speech(TTS) Software using Python Libraries in PCC-CS393(IT Workshop).</li>
                         <li data-icon="🟢">Currently working on an Online Transport System in ESC591(Software Engineering Lab) using HTML, Vanila CSS, JavaScript. Using Firebase for authentication, storage and realtime database. Google Maps API for finding shortest distance between location and destination and also to track current location.</li>
                         <li data-icon="🟢"><span>Skills: </span>Python, HTML, CSS, JavaScript, Firebase</li>`
     },
